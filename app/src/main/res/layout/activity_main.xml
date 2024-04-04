@@ -4,59 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/image"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/instructionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please insert your age:"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp"
-        android:textSize="18sp"/>
+        android:text="HISTORY APP
+                      GO BACK TO HISTORY AND IT'S LEGENDS"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/ageEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/instructionTextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="18dp"
+        android:textColorHint="@color/black"
+        android:hint="Please enter your age"
         android:inputType="number"
-        android:hint="Enter your age"
-        android:layout_marginTop="8dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionTextView" />
 
     <Button
         android:id="@+id/checkButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="160dp"
         android:text="Check"
-        app:layout_constraintTop_toBottomOf="@+id/ageEditText"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/ageEditText" />
 
     <TextView
         android:id="@+id/resultTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text=""
-        app:layout_constraintTop_toBottomOf="@+id/checkButton"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
-        android:textSize="18sp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkButton" />
 
     <Button
         android:id="@+id/clearButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="160dp"
         android:text="Clear"
-        app:layout_constraintTop_toBottomOf="@+id/resultTextView"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/resultTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
